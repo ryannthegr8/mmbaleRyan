@@ -6,5 +6,5 @@ I have worked on, in a simple way that is straight forward.
 
 ## Features
 
-_Portfolio_ -
+_Portfolio_ - my projects, experience, and skills.
 _Contact_ - A way to get in touch
