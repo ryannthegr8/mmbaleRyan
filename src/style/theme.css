@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------- Variables --------------------- */
+:root {
+  /* Color variables */
+  --color-dominant: #9b23d0;
+  --color-dominant-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-black: rgb(0, 0, 0);
+  --color-grey: rgb(112, 112, 112);
+  --font--dominant: ;
+}
+
+/* Dark mode toggle */
+
+.cbx-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.cbx-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  float: left;
+  margin-right: 15x;
+}
+
+.switch span {
+  display: inline-block;
+}
+
+input.cbx-toggle + label {
+  padding: 2px;
+  width: 40px;
+  height: 20px;
+  background-color: var(--color-black);
+  border-radius: 20px;
+  transition: background 0.4s;
+}
+
+input.cbx-toggle + label:before,
+input.cbx-toggle + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.cbx-toggle + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: background 0.4s;
+}
+
+input.cbx-toggle + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 17px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  transition: margin 0.4s, background 0.4s;
+}
+
+input.cbx-toggle:checked + label {
+  background-color: var(--color-dominant);
+}
+
+input.cbx-toggle:checked + label:after {
+  margin-left: 15px;
+  background-color: var(--color-dominant);
+}
+
+/* ---------------- Home Page --------------------- */
+.dark-mode {
+  background-image: url(../assets/home.jpg);
+  color: var(--color-white);
+
+  .links a {
+    color: var(--color-white);
+  }
+  .socials a {
+    color: var(--color-white);
+  }
+}
+/* ---------------- About Me --------------------- */
+
+/* ---------------- Services --------------------- */
+
+/* ---------------- Contact me --------------------- */
+
+/* ---------------- Mini Apps --------------------- */

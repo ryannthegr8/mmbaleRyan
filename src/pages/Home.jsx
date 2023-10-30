@@ -3,20 +3,26 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 import { SiBuymeacoffee } from "react-icons/si";
-import Planet from "./canvas/Planet";
+import Planet from "../components/canvas/Planet";
+
+function toggleDarkLight() {
+  const body = document.getElementById("container-hero");
+  const currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
 
 function Home() {
   return (
-    <section className="container-hero">
+    <section id="container-hero">
       <div className="hero-left">
         <h3>Ryan I. Mmbale</h3>
         <h2>Fullstack Software Engineer | JS </h2>
-        <ul class="links">
+        <ul className="links ">
           <li>
-            <a href="">Home</a>
+            <a href="./Home">Home</a>
           </li>
           <li>
-            <a href="">About Me</a>
+            <a href="./About">About Me</a>
           </li>
           <li>
             <a href="">Services</a>
@@ -25,13 +31,21 @@ function Home() {
             <a href="">Contact Me</a>
           </li>
           <li>
-            <a href="">Dark Mode</a>
+            <a href="">My Apps</a>
           </li>
           <li>
-            <button>Mini Apps</button>
+            <a href="">My Blog</a>
           </li>
           <li>
-            <button>Blog</button>
+            <div class="switch">
+              <input
+                id="toggle"
+                class="cbx-toggle cbx-toggle-round-flat"
+                type="checkbox"
+                onClick={toggleDarkLight}
+              />
+              <label for="toggle"></label> <span>Theme</span>
+            </div>
           </li>
         </ul>
 
@@ -71,6 +85,7 @@ function Home() {
 
       <div className="hero-right">
         <Planet />
+        <p id="copyright">@2023 Ryan. All Rights Reserved</p>
       </div>
     </section>
   );
