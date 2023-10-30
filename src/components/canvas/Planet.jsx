@@ -6,7 +6,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import "../../style/index.css";
 
 function PlanetImport() {
-  const HolyKey = useGLTF("./planet/scene.gltf");
+  const PlanetObject = useGLTF("./planet/scene.gltf");
   return (
     <>
       <hemisphereLight />
@@ -23,8 +23,8 @@ function PlanetImport() {
 
       <mesh>
         <primitive
-          object={HolyKey.scene}
-          scale={1.2}
+          object={PlanetObject.scene}
+          scale={2.2}
           // position={[0, -4.25, -1.5]}
           // rotation={[-0.01, -0.02, -0.01]}
         />

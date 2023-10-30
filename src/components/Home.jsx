@@ -9,23 +9,29 @@ function Home() {
   return (
     <section className="container-hero">
       <div className="hero-left">
-        <h4>Ryan I. Mmbale</h4>
-        <p>Fullstack Software Engineer | JS </p>
+        <h3>Ryan I. Mmbale</h3>
+        <h2>Fullstack Software Engineer | JS </h2>
         <ul class="links">
           <li>
-            <a href="hero">home</a>
+            <a href="">Home</a>
           </li>
           <li>
-            <a href="about">about</a>
+            <a href="">About Me</a>
           </li>
           <li>
-            <a href="services">services</a>
+            <a href="">Services</a>
           </li>
           <li>
-            <a href="contact">contact</a>
+            <a href="">Contact Me</a>
           </li>
           <li>
-            <a href="contact">Dark Mode</a>
+            <a href="">Dark Mode</a>
+          </li>
+          <li>
+            <button>Mini Apps</button>
+          </li>
+          <li>
+            <button>Blog</button>
           </li>
         </ul>
 
@@ -63,7 +69,9 @@ function Home() {
         </ul>
       </div>
 
-      <div className="hero-right">{/* <Planet /> */}</div>
+      <div className="hero-right">
+        <Planet />
+      </div>
     </section>
   );
 }
