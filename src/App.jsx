@@ -1,24 +1,30 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import "./style/index.css";
 import "./style/theme.css";
 import "./style/responsive.css";
 
-//components
-import { About, Applications, Contact, Home, Services } from "./pages";
+//Pages
+import { Applications, Contact, Home, Services, About } from "./pages";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Home />
-
+        {/* <header>
+          <nav className="navbar">
+            <div className="nav-links">
+              <NavLink to="/">Home </NavLink>
+              <NavLink to="/about">About</NavLink>
+            </div>
+          </nav>
+        </header> */}
         <main>
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="./Applications" element={<Applications />} />
-            <Route path="./About" element={<About />} />
-            <Route path="./Services" element={<Services />} />
-            <Route path="./Contact" element={<Contact />} />
+            <Route index exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/applications" element={<Applications />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </BrowserRouter>

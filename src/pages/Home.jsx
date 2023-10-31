@@ -5,6 +5,9 @@ import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 import { SiBuymeacoffee } from "react-icons/si";
 import Planet from "../components/canvas/Planet";
 
+//Pages
+import { About, Applications, Contact, Services } from "../pages";
+
 function toggleDarkLight() {
   const body = document.getElementById("container-hero");
   const currentClass = body.className;
@@ -19,37 +22,37 @@ function Home() {
         <h2>Fullstack Software Engineer | JS </h2>
         <ul className="links ">
           <li>
-            <a href="./Home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="./About">About Me</a>
+            <a href="/about">About Me</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="/services">Services</a>
           </li>
           <li>
-            <a href="">Contact Me</a>
+            <a href="/contact">Contact Me</a>
           </li>
           <li>
-            <a href="">My Apps</a>
+            <a href="/applications">My Apps</a>
           </li>
           <li>
-            <a href="">My Blog</a>
+            <a href="https://coderryan.hashnode.dev/">My Blog</a>
           </li>
           <li>
-            <div class="switch">
+            <div className="switch">
               <input
                 id="toggle"
-                class="cbx-toggle cbx-toggle-round-flat"
+                className="cbx-toggle cbx-toggle-round-flat"
                 type="checkbox"
                 onClick={toggleDarkLight}
               />
-              <label for="toggle"></label> <span>Theme</span>
+              <label htmlFor="toggle"></label> <span>Theme</span>
             </div>
           </li>
         </ul>
 
-        <ul class="socials">
+        <ul className="socials">
           <li>
             <a href="https://github.com/ryannthegr8">
               <AiFillGithub />
