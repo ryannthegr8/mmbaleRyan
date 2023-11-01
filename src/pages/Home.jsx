@@ -8,6 +8,9 @@ import Planet from "../components/canvas/Planet";
 //Pages
 import { About, Applications, Contact, Services } from "../pages";
 
+//components
+import { Nav } from "../components";
+
 function toggleDarkLight() {
   const body = document.getElementById("container-hero");
   const currentClass = body.className;
@@ -90,6 +93,7 @@ function Home() {
         <Planet />
         <p id="copyright">@2023 Ryan. All Rights Reserved</p>
       </div>
+      {/* <Nav /> */}
     </section>
   );
 }

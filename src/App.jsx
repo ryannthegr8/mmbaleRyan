@@ -6,6 +6,9 @@ import "./style/responsive.css";
 //Pages
 import { Applications, Contact, Home, Services, About } from "./pages";
 
+//components
+import { Nav } from "./components";
+
 function App() {
   return (
     <>
@@ -18,6 +21,7 @@ function App() {
             </div>
           </nav>
         </header> */}
+        <Nav />
         <main>
           <Routes>
             <Route index exact path="/" element={<Home />} />

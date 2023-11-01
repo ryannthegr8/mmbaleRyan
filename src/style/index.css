@@ -15,6 +15,41 @@
   --color-black: rgb(0, 0, 0);
   --color-grey: rgb(112, 112, 112);
   --font--dominant: ;
+  --color-light-grey: rgba(255, 255, 255, 0.6);
+}
+/* ---------------- General Components --------------------- */
+/* Nav for all pages */
+.navbar {
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(255, 255, 255, 0.3);
+  width: max-content;
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2rem;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  border: #9b23d0;
+}
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-black);
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-dominant);
 }
 /* ---------------- Home page --------------------- */
 
@@ -24,6 +59,7 @@ section {
   background-image: url(../assets/home-light.jpg);
   background-size: cover;
   display: flex;
+
   font-family: "Rubik", sans-serif;
 }
 h2,
@@ -49,7 +85,7 @@ li {
 }
 
 .links a {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   color: var(--color-black);
   text-decoration: inherit;
   display: inline-block;

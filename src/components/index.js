@@ -1,7 +1,4 @@
 // import { Planet } from "./canvas";
-import Home from "./Home";
+import Nav from "./Nav";
 
-export {
-  Home,
-  // Planet
-};
+export { Nav };
