@@ -20,16 +20,16 @@ function toggleDarkLight() {
 function Home() {
   return (
     <>
-      <section id="container-hero">
+      <section id="home">
         <div className="hero-left">
-          <h3>Ryan I. Mmbale</h3>
+          <h3>Ryan I. Mmbale changed</h3>
           <h2>Fullstack Software Engineer | JS </h2>
           <ul className="links ">
             <li>
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">About Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li>
               <a href="/services">Services</a>
@@ -94,6 +94,18 @@ function Home() {
           <Planet />
           <p id="copyright">@2023 Ryan. All Rights Reserved</p>
         </div>
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="applications">
+        <Applications />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </>
   );

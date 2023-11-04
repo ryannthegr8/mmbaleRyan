@@ -19,7 +19,12 @@ function PlanetImport() {
         penumbra={1}
         shadow-mapSize={1024}
       />
-      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={2} />
+      <OrbitControls
+        enableZoom={false}
+        autoRotate
+        autoRotateSpeed={2}
+        enableRotate={false}
+      />
 
       <mesh>
         <primitive

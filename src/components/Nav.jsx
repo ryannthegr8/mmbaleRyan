@@ -11,7 +11,7 @@ function Nav() {
   return (
     <nav className="navbar">
       <a
-        href="/"
+        href="#home"
         onClick={() => setActiveNav("/")}
         className={activeNav === "/" ? "active" : ""}
       >
@@ -19,23 +19,23 @@ function Nav() {
         <AiOutlineHome />
       </a>
       <a
-        href="/about"
+        href="#about"
         onClick={() => setActiveNav("/about")}
-        className={activeNav === "#about" ? "active" : ""}
+        className={activeNav === "/about" ? "active" : ""}
       >
         {" "}
         <AiOutlineUser />
       </a>
       <a
-        href="/applications"
+        href="#applications"
         onClick={() => setActiveNav("/applications")}
-        className={activeNav === "#experience" ? "active" : ""}
+        className={activeNav === "/applications" ? "active" : ""}
       >
         {" "}
         <BiBook />
       </a>
       <a
-        href="/services"
+        href="#services"
         onClick={() => setActiveNav("/services")}
         className={activeNav === "/services" ? "active" : ""}
       >
@@ -43,7 +43,7 @@ function Nav() {
         <RiServerLine />
       </a>
       <a
-        href="/contact"
+        href="#contact"
         onClick={() => setActiveNav("/contact")}
         className={activeNav === "/contact" ? "active" : ""}
       >

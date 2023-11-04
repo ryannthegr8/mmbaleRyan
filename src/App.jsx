@@ -25,7 +25,7 @@ function App() {
         <main>
           <Routes>
             <Route index exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
             <Route path="/applications" element={<Applications />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
