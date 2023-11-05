@@ -12,7 +12,7 @@ html {
 /* ---------------- Variables --------------------- */
 :root {
   /* Color variables */
-  --color-dominant: #9b23d0;
+  --color-dominant: #6601ff;
   --color-dominant-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-black: rgb(0, 0, 0);
@@ -24,7 +24,7 @@ html {
 /* Nav for all pages */
 .navbar {
   /* background: rgba(0, 0, 0, 0.3); */
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(127, 127, 127, 0.3);
   width: max-content;
   display: flex;
   padding: 0.5rem 0.5rem;
@@ -54,15 +54,23 @@ nav a.active {
   background: var(--color-bg);
   color: var(--color-dominant);
 }
+
+/* Backgrounds */
+
+#home {
+  background-image: url(../assets/home.svg);
+}
+#about {
+  background-image: url(../assets/about.svg);
+}
+
 /* ---------------- Home page --------------------- */
 
 section {
   height: 100vh;
   width: 100%;
-  background-image: url(../assets/home-light.jpg);
   background-size: cover;
   display: flex;
-
   font-family: "Rubik", sans-serif;
 }
 h2,
@@ -155,7 +163,6 @@ li {
 }
 
 #copyright {
-  position: absolute;
   bottom: 0.5rem;
   right: 1rem;
   font-size: xx-small;

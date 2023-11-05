@@ -25,6 +25,9 @@
     flex-direction: column;
     z-index: 2;
   }
+  h2 {
+    font-size: 15px;
+  }
 
   .hero-left {
     width: 100%;
