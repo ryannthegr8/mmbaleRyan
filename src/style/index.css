@@ -1,4 +1,8 @@
+/* Rubik */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+/* Josefin font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600;700&display=swap");
 
 * {
   margin: 0;
@@ -13,12 +17,13 @@ html {
 :root {
   /* Color variables */
   --color-dominant: #6601ff;
-  --color-dominant-variant: rgba(77, 181, 255, 0.4);
+  --color-theme-yellow: rgb(255, 255, 0);
   --color-white: #fff;
   --color-black: rgb(0, 0, 0);
   --color-grey: rgb(112, 112, 112);
-  --font--dominant: ;
   --color-light-grey: rgba(255, 255, 255, 0.6);
+  --bg-light-color: #e8d1f9;
+  --bg-dark-color: #25255d;
 }
 /* ---------------- General Components --------------------- */
 /* Nav for all pages */
@@ -37,13 +42,14 @@ html {
   border-radius: 3rem;
   backdrop-filter: blur(15px);
   border: #9b23d0;
+  color: white;
 }
 nav a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-black);
+  color: var(--color-white);
   font-size: 1.1rem;
 }
 
@@ -54,7 +60,25 @@ nav a.active {
   background: var(--color-bg);
   color: var(--color-dominant);
 }
+/* Theme toggle */
+.themeBtn {
+  background: rgba(127, 127, 127, 0.3);
+  width: max-content;
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  z-index: 8;
+  position: fixed;
+  right: 0.1%;
+  transform: translate(-50%);
+  top: 2%;
+  gap: 0.8rem;
+  border-radius: 3rem;
+}
 
+.themeBtn:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+}
 /* Backgrounds */
 
 #home {
@@ -63,7 +87,27 @@ nav a.active {
 #about {
   background-image: url(../assets/about.svg);
 }
+/* Tooltip formatting */
+[data-tooltip] {
+  position: relative;
+}
 
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%; /* put it on the top */
+  width: max-content;
+  opacity: 0;
+  -webkit-transition: opacity 0.05s ease-in-out;
+}
+
+[data-tooltip]:hover:after {
+  opacity: 1;
+}
+
+div[data-tooltip]:after {
+  left: 5px !important;
+}
 /* ---------------- Home page --------------------- */
 
 section {
@@ -72,11 +116,16 @@ section {
   background-size: cover;
   display: flex;
   font-family: "Rubik", sans-serif;
+  background-color: var(--bg-light-color);
 }
 h2,
 h3 {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.tagline {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
 }
 
 .hero-left {
@@ -174,7 +223,9 @@ li {
 }
 
 /* ---------------- About Me --------------------- */
-
+.white-heading {
+  color: var(--color-white);
+}
 /* ---------------- Services --------------------- */
 
 /* ---------------- Contact me --------------------- */

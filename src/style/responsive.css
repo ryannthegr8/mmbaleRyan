@@ -28,6 +28,10 @@
   h2 {
     font-size: 15px;
   }
+  .tagline {
+    font-size: 13px;
+    text-align: center;
+  }
 
   .hero-left {
     width: 100%;
@@ -36,7 +40,6 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-
     z-index: 2;
   }
 
@@ -48,6 +51,9 @@
   #container {
     vertical-align: top;
     margin-top: -10rem;
+  }
+  .navbar {
+    color: var(--color-white);
   }
 }
 /*============ MEDIA QUERIES (SMALL DEVICES)===============*/

@@ -7,7 +7,7 @@ import "./style/responsive.css";
 import { Applications, Contact, Home, Services, About } from "./pages";
 
 //components
-import { Nav } from "./components";
+import { Nav, ThemeToggle } from "./components";
 
 function App() {
   return (
@@ -22,13 +22,14 @@ function App() {
           </nav>
         </header> */}
         <Nav />
+        <ThemeToggle />
         <main>
           <Routes>
             <Route index exact path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            {/* <Route path="/about" element={<About />} />
             <Route path="/applications" element={<Applications />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </main>
       </BrowserRouter>
