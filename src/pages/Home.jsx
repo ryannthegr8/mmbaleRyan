@@ -19,32 +19,13 @@ function Home() {
     <>
       <div id="site-container">
         <section id="home">
-          <div className="hero-left">
-            <h3>Ryan I. Mmbale</h3>
-            <h2>Fullstack Software Engineer | JS </h2>
-            {/* <ul className="links ">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="#about">About Me</a>
-              </li>
-              <li>
-                <a href="/services">Services</a>
-              </li>
-              <li>
-                <a href="/contact">Contact Me</a>
-              </li>
-              <li>
-                <a href="/applications">My Apps</a>
-              </li>
-              <li>
-                <a href="https://coderryan.hashnode.dev/">My Blog</a>
-              </li>
-            </ul> */}
+          <div className="hero-left ">
+            <h3 className="hero-text">Bienvenue!</h3>
+            <h3 className="hero-text">I Am Ryan I. Mmbale</h3>
+            <h2 className="hero-text">Fullstack Software Engineer | JS </h2>
             <p className="tagline">
-              I am a passionate developer dedicated to delivering software
-              solutions with finesse.
+              I Passionately Craft Software, For Diverse Clients, Prioritizing
+              Originality With Precision, Flair and Finesse.
             </p>
 
             <ul className="socials">

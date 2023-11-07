@@ -17,13 +17,15 @@ html {
 :root {
   /* Color variables */
   --color-dominant: #6601ff;
+  --color-dominant-variant: #956afa;
   --color-theme-yellow: rgb(255, 255, 0);
   --color-white: #fff;
   --color-black: rgb(0, 0, 0);
   --color-grey: rgb(112, 112, 112);
   --color-light-grey: rgba(255, 255, 255, 0.6);
-  --bg-light-color: #e8d1f9;
+  --bg-light-color: #e8d1f988;
   --bg-dark-color: #25255d;
+  --bg-loader-color: #212121;
 }
 /* ---------------- General Components --------------------- */
 /* Nav for all pages */
@@ -79,6 +81,110 @@ nav a.active {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.4);
 }
+
+/* Loader */
+.loaderCard {
+  background-color: var(--bg-loader-color);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.loader {
+  color: var(--color-grey);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.wordsLoader {
+  overflow: hidden;
+  position: relative;
+}
+.wordsLoader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(
+    var(--bg-loader-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-loader-color) 90%
+  ); */
+  z-index: 20;
+}
+
+.wordLoader {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: var(--color-dominant-variant);
+  animation: spin_4991 5s;
+}
+
+@keyframes spin_4991 {
+  1% {
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
+  }
+
+  10% {
+    -webkit-transform: translateY(-0%);
+    transform: translateY(-0%);
+  }
+
+  20% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  30% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  70% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+  80% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+  90% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+  100% {
+    -webkit-transform: translateY(-500%);
+    transform: translateY(-500%);
+  }
+}
+
 /* Backgrounds */
 
 #home {
@@ -98,7 +204,7 @@ nav a.active {
   top: 100%; /* put it on the top */
   width: max-content;
   opacity: 0;
-  -webkit-transition: opacity 0.05s ease-in-out;
+  transition: opacity 0.05s ease-in-out;
 }
 
 [data-tooltip]:hover:after {
@@ -111,15 +217,14 @@ div[data-tooltip]:after {
 /* ---------------- Home page --------------------- */
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   display: flex;
   font-family: "Rubik", sans-serif;
   background-color: var(--bg-light-color);
 }
-h2,
-h3 {
+hero-text {
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -134,6 +239,19 @@ h3 {
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
+  animation: leftFadeIn 1s ease-in-out 0s 1 normal none;
+}
+
+@keyframes leftFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 li {
   list-style: none;
@@ -209,6 +327,19 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: rightFadeIn 1s ease-in-out 0s 1 normal none;
+}
+
+@keyframes rightFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #copyright {
@@ -225,6 +356,7 @@ li {
 /* ---------------- About Me --------------------- */
 .white-heading {
   color: var(--color-white);
+  animation: leftFadeIn 1s ease-in-out 0s 1 normal none;
 }
 /* ---------------- Services --------------------- */
 
