@@ -23,11 +23,12 @@ html {
   --color-black: rgb(0, 0, 0);
   --color-grey: rgb(112, 112, 112);
   --color-light-grey: rgba(255, 255, 255, 0.6);
-  --bg-light-color: #e8d1f988;
+  --bg-light-color: #ffffff;
   --bg-dark-color: #25255d;
   --bg-loader-color: #212121;
 }
-/* ---------------- General Components --------------------- */
+
+/* ----------------------------------------------------- General Components ----------------------------------------------------------- */
 /* Nav for all pages */
 .navbar {
   /* background: rgba(0, 0, 0, 0.3); */
@@ -44,14 +45,13 @@ html {
   border-radius: 3rem;
   backdrop-filter: blur(15px);
   border: #9b23d0;
-  color: white;
 }
 nav a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: 1.1rem;
 }
 
@@ -188,10 +188,16 @@ nav a.active {
 /* Backgrounds */
 
 #home {
-  background-image: url(../assets/home.svg);
+  background-image: url(../assets/moon.svg);
 }
-#about {
-  background-image: url(../assets/about.svg);
+.aboutContainer {
+  background-image: url(../assets/moon.svg);
+}
+#applications {
+  background-image: url(../assets/moon.svg);
+}
+#services {
+  background-image: url(../assets/moon.svg);
 }
 /* Tooltip formatting */
 [data-tooltip] {
@@ -214,7 +220,7 @@ nav a.active {
 div[data-tooltip]:after {
   left: 5px !important;
 }
-/* ---------------- Home page --------------------- */
+/* ------------------------------------------------ Home page ----------------------------------------------- */
 
 section {
   min-height: 100vh;
@@ -351,15 +357,46 @@ li {
 #container {
   height: 100vh;
   width: 100%;
+  /* background-color: black; */
 }
 
-/* ---------------- About Me --------------------- */
-.white-heading {
-  color: var(--color-white);
-  animation: leftFadeIn 1s ease-in-out 0s 1 normal none;
+/* ----------------------------------------------------------- About Me --------------------------------------------------------------- */
+.aboutContainer {
 }
-/* ---------------- Services --------------------- */
 
-/* ---------------- Contact me --------------------- */
+.aboutMe {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
-/* ---------------- Mini Apps --------------------- */
+  /* glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}
+
+.skills {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rightFadeIn 1s ease-in-out 0s 1 normal none;
+  margin: 3rem;
+
+  /* glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}
+/* --------------------------------------------------------- Services -------------------------------------------------------------- */
+/* --------------------------------------------------------- Contact Me -------------------------------------------------------------- */
+/* --------------------------------------------------------- Mini apps -------------------------------------------------------------- */

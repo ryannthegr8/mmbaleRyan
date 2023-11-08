@@ -25,7 +25,7 @@ function App() {
   }, []);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <div className="loaderCard">
           <div className="loader">
             <p>loading</p>
@@ -39,17 +39,17 @@ function App() {
             </div>
           </div>
         </div>
-      ) : (
-        <BrowserRouter>
-          <Nav />
-          <ThemeToggle />
-          <main>
-            <Routes>
-              <Route index exact path="/" element={<Home />} />
-            </Routes>
-          </main>
-        </BrowserRouter>
-      )}
+      ) : ( */}
+      <BrowserRouter>
+        <Nav />
+        <ThemeToggle />
+        <main>
+          <Routes>
+            <Route index exact path="/" element={<Home />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+      {/* )} */}
     </>
   );
 }

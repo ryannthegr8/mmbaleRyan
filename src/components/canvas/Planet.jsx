@@ -2,9 +2,6 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
-//Style
-import "../../style/index.css";
-
 function PlanetImport() {
   const PlanetObject = useGLTF("./planet/scene.gltf");
   return (

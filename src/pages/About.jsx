@@ -1,11 +1,16 @@
 import React from "react";
 
+//3D object
+// import PurpleDiamond from "../components/canvas/PurpleDiamond";
+
 function About() {
   return (
-    <div>
-      <h1 className="white-heading">About Me</h1>
-      <p>iyuguyighfvjyfff</p>
-    </div>
+    <>
+      <section className="aboutContainer">
+        <div className="aboutMe"></div>
+        <div className="skills"></div>
+      </section>
+    </>
   );
 }
 
