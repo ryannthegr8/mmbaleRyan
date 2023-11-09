@@ -36,7 +36,7 @@ html {
   width: max-content;
   display: flex;
   padding: 0.5rem 0.5rem;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   left: 50%;
   transform: translate(-50%);
@@ -68,7 +68,7 @@ nav a.active {
   width: max-content;
   display: flex;
   padding: 0.5rem 0.5rem;
-  z-index: 8;
+  z-index: 3;
   position: fixed;
   right: 0.1%;
   transform: translate(-50%);
@@ -120,7 +120,7 @@ nav a.active {
     transparent 70%,
     var(--bg-loader-color) 90%
   ); */
-  z-index: 20;
+  z-index: 4;
 }
 
 .wordLoader {
@@ -365,11 +365,8 @@ li {
   
 } */
 
-.aboutMe {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.me {
+  width: 30%;
   padding: 2rem;
   margin-left: 3rem;
   margin-top: 3rem;
@@ -383,13 +380,44 @@ li {
   border-radius: 10px;
 }
 
-.skills {
-  width: 58%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.aboutMe {
+  width: 68%;
   animation: rightFadeIn 1s ease-in-out 0s 1 normal none;
   margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}
+.myImage img {
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  margin: 2rem;
+}
+
+.heading {
+  font-family: "Rubik", sans-serif;
+  margin-top: 1rem;
+}
+
+.myWords {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  margin: 2rem;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.mySkills {
+  width: 94%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
 
   /* glass */
   background: rgba(255, 255, 255, 0.2);
@@ -397,6 +425,26 @@ li {
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
+}
+.skill {
+  width: 8rem;
+  height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}
+.head-skills {
+  margin-bottom: 1rem;
 }
 /* --------------------------------------------------------- Services -------------------------------------------------------------- */
 /* --------------------------------------------------------- Contact Me -------------------------------------------------------------- */
