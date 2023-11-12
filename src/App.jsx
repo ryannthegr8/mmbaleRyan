@@ -6,7 +6,7 @@ import "./style/theme.css";
 import "./style/responsive.css";
 
 //Pages
-import { Applications, Contact, Home, Services, About } from "./pages";
+import { Home } from "./pages";
 
 //components
 import { Nav, ThemeToggle } from "./components";

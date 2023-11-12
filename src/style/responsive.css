@@ -9,7 +9,7 @@
 /* ---------------- Variables --------------------- */
 :root {
   /* Color variables */
-  --color-dominant: #9b23d0;
+  --color-dominant: rgb(139, 92, 246);
   --color-dominant-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-black: rgb(0, 0, 0);
@@ -25,7 +25,7 @@
     flex-direction: column;
     z-index: 2;
   }
-  h2 {
+  h1 {
     font-size: 15px;
   }
   .tagline {
@@ -61,11 +61,28 @@
   .links {
     display: none;
   }
+  /* ---------------- About Me --------------------- */
+  .me {
+    width: 95%;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 1ßrem;
+  }
+  .aboutContainer {
+    align-items: center;
+  }
+  .aboutMe {
+    margin: 0rem;
+    width: 90%;
+  }
+  .skill {
+    width: 7rem;
+  }
+  /* ---------------- Services --------------------- */
+
+  /* ---------------- Contact me --------------------- */
+  .contact3d {
+    width: 100%;
+  }
+  /* ---------------- Mini Apps --------------------- */
 }
-/* ---------------- About Me --------------------- */
-
-/* ---------------- Services --------------------- */
-
-/* ---------------- Contact me --------------------- */
-
-/* ---------------- Mini Apps --------------------- */

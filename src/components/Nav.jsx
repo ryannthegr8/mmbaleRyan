@@ -1,9 +1,10 @@
 import React from "react";
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
-import { RiServerLine } from "react-icons/ri";
-import { BiMessageSquareDetail } from "react-icons/bi";
+import {
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
+import { RiServerLine, RiContactsLine } from "react-icons/ri";
 import { useState } from "react";
 
 function Nav() {
@@ -27,12 +28,12 @@ function Nav() {
         <AiOutlineUser />
       </a>
       <a
-        href="#applications"
-        onClick={() => setActiveNav("/applications")}
+        href="#portfolio"
+        onClick={() => setActiveNav("/portfolio")}
         className={activeNav === "/applications" ? "active" : ""}
       >
         {" "}
-        <BiBook />
+        <AiOutlineFundProjectionScreen />
       </a>
       <a
         href="#services"
@@ -48,7 +49,7 @@ function Nav() {
         className={activeNav === "/contact" ? "active" : ""}
       >
         {" "}
-        <BiMessageSquareDetail />
+        <RiContactsLine />
       </a>
     </nav>
   );

@@ -9,7 +9,7 @@ import { SiBuymeacoffee } from "react-icons/si";
 import Planet from "../components/canvas/Planet";
 
 //Pages
-import { About, Applications, Contact, Services } from "../pages";
+import { About, Portfolio, Contact, Services } from "../pages";
 
 //Components
 import { Nav } from "../components";
@@ -22,10 +22,12 @@ function Home() {
           <div className="hero-left ">
             <h3 className="hero-text">Bienvenue!</h3>
             <h3 className="hero-text">I Am Ryan I. Mmbale</h3>
-            <h2 className="hero-text">Fullstack Software Engineer | JS </h2>
+            <h1 className="hero-text" id="purpleItem">
+              Fullstack Software Engineer | JS{" "}
+            </h1>
             <p className="tagline">
-              I Passionately Craft Software, For Diverse Clients, Prioritizing
-              Originality With Precision, Flair and Finesse.
+              I Craft Software, For Diverse Clients, Prioritizing Originality
+              With Precision, Flair and Finesse.
             </p>
 
             <ul className="socials">
@@ -84,8 +86,8 @@ function Home() {
         <section id="about">
           <About />
         </section>
-        <section id="applications">
-          <Applications />
+        <section id="portfolio">
+          <Portfolio />
         </section>
         <section id="services">
           <Services />

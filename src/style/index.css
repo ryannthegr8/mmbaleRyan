@@ -16,7 +16,7 @@ html {
 /* ---------------- Variables --------------------- */
 :root {
   /* Color variables */
-  --color-dominant: #6601ff;
+  --color-dominant: rgb(139, 92, 246);
   --color-dominant-variant: #956afa;
   --color-theme-yellow: rgb(255, 255, 0);
   --color-white: #fff;
@@ -220,6 +220,10 @@ nav a.active {
 div[data-tooltip]:after {
   left: 5px !important;
 }
+
+#purpleItem {
+  color: var(--color-dominant);
+}
 /* ------------------------------------------------ Home page ----------------------------------------------- */
 
 section {
@@ -371,6 +375,10 @@ li {
   margin-left: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   /* glass */
   background: rgba(255, 255, 255, 0.2);
@@ -447,5 +455,22 @@ li {
   margin-bottom: 1rem;
 }
 /* --------------------------------------------------------- Services -------------------------------------------------------------- */
+
 /* --------------------------------------------------------- Contact Me -------------------------------------------------------------- */
+.containerContact {
+  display: flex;
+}
+.contactInfo {
+  width: 60%;
+}
+.contact3d {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#canvasContainer {
+  height: 100vh;
+  width: 100%;
+}
 /* --------------------------------------------------------- Mini apps -------------------------------------------------------------- */

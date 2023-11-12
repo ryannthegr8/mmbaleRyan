@@ -1,13 +1,18 @@
 import React from "react";
 
+//3D object
+import FantasyCrystal from "../components/canvas/fantasyCrystal";
+
 function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
-      <div>
-        <p id="copyright">@2023 Ryan. All Rights Reserved</p>
-      </div>
-    </div>
+    <>
+      <section className="containerContact">
+        <div className="contactInfo">hghg</div>
+        <div className="contact3d">
+          <FantasyCrystal />
+        </div>
+      </section>
+    </>
   );
 }
 

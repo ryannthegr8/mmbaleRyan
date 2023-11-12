@@ -9,7 +9,7 @@
 /* ---------------- Variables --------------------- */
 :root {
   /* Color variables */
-  --color-dominant: #9b23d0;
+  --color-dominant: rgb(139, 92, 246);
   --color-dominant-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-black: rgb(0, 0, 0);

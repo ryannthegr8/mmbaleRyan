@@ -11,6 +11,7 @@ import {
   BiLogoGithub,
 } from "react-icons/bi";
 import { GrAndroid } from "react-icons/gr";
+import { FaLocationDot } from "react-icons/fa6";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 
 import Me from "../assets/me.jpeg";
@@ -24,7 +25,9 @@ function About() {
       <section className="aboutContainer">
         <div className="me">
           <h3>About me</h3>
-          <p className="tagline">Get To Know Me</p>
+          <p className="tagline" id="purpleItem">
+            - Get To Know Me -
+          </p>
           <div className="myImage">
             <img src={Me}></img>
           </div>
@@ -35,20 +38,20 @@ function About() {
             You are welcome to my website, feel free to get to know me through
             this website. My passion for software development comes from way
             back in 2016 since my initial computer interactions while I was in
-            highschool and it all started from there. Being driven by a profound
-            passion for technology and innovation in a spectrum of programming
-            languages, I have managed to thrive in creating robust, scalable
-            solutions. With a knack for problem-solving, I've honed my skills in
-            software development and agile methodologies. Continuously learning
-            and evolving, I seek not just to code but to craft elegant,
-            efficient, and user-centric software. My goal is to contribute
-            impactful, forward-looking solutions in this ever-evolving tech
-            landscape.
+            highschool and it all started from there. With a knack for
+            problem-solving and serendipity I've honed my skills in software
+            development and agile methodologies. Continuously learning and
+            evolving, I seek not just to code but to craft elegant, efficient,
+            and user-centric software, to contribute impactful, forward-looking
+            solutions in the ever-evolving tech landscape.
+            <p id="purpleItem">
+              <FaLocationDot /> Nairobi, Kenya - Remote
+            </p>
           </div>
-          <h2 className="head-skills">Major Skills</h2>
+          <h2 className="head-skills">Major TechStack</h2>
           <div className="mySkills">
             <div className="skill">
-              <BiLogoJavascript /> Javascript
+              <BiLogoJavascript /> JavaScript
             </div>
             <div className="skill">
               <BiLogoHtml5 /> HTML
