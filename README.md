@@ -9,13 +9,13 @@ I have worked on, in a simple way that is straight forward.
 _Portfolio_ - my projects, experience, and skills. <br>
 _Contact_ - A way to get in touch
 
-## User Technology
+## Used Technology
 
-CSS <br>
-Javascript <br>
-JSX <br>
-ThreeJS <br>
-React Three Fiber
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) <br>
+  Javascript <br>
+  JSX <br>
+  ThreeJS <br>
+  React Three Fiber
 
 ## Contributing
 
